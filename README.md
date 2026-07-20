@@ -1,6 +1,6 @@
 # data-recovery-toolkit
 
-> Cross-platform CLI utilities for hands-on data recovery work — disk imaging, SMART monitoring, file-carving wrappers, RAID triage.
+> Cross-platform CLI utilities for hands-on data recovery work  -  disk imaging, SMART monitoring, file-carving wrappers, RAID triage.
 
 Companion reference site: **[Save My Disk](https://www.save-my-disk.com/)**.
 
@@ -9,7 +9,7 @@ Companion reference site: **[Save My Disk](https://www.save-my-disk.com/)**.
 | Tool | Purpose |
 |------|---------|
 | `bin/smart-monitor.sh` | Daily S.M.A.R.T health monitor with configurable thresholds + email alerts. |
-| `bin/ddrescue-safe.sh` | Two-pass GNU ddrescue wrapper with logbook resume — safer disk imaging from failing drives. |
+| `bin/ddrescue-safe.sh` | Two-pass GNU ddrescue wrapper with logbook resume  -  safer disk imaging from failing drives. |
 | `bin/raid-triage.py` | Walks a candidate failing array, reports component metadata (mdadm/lvm/zpool/btrfs), suggests reassembly path. |
 | `bin/photorec-wrap.sh` | Pre-configured PhotoRec wrapper with file-type whitelist + structured output. |
 
@@ -53,11 +53,11 @@ The full workflow context, when each tool applies, and the underlying data-recov
 
 These tools touch block devices and can destroy data when misused. They include guard rails (refusing to write to mounted filesystems, refusing to overwrite non-image files, requiring explicit confirmation), but you remain responsible for what you run on production data.
 
-Always image first, work from the image — never recover directly on the failing source.
+Always image first, work from the image  -  never recover directly on the failing source.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT  -  see [LICENSE](LICENSE).
 
 ## Contributing
 
